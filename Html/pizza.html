@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="/script.js"></script>
+
+</head>
+<body style="background-color:lightgoldenrodyellow;">
+    
+    <nav class="navbar navbar-expand-sm bg-dark ">
+        <div class="container-fluid">
+          
+            <ul class="nav justify-content-center">
+       
+                <li class="nav-item">
+                    <a class="nav-link" id="ji"   href="/index.html">HOME
+                    </a>
+                </li>
+    
+                <li class="nav-item">
+                    <a class="nav-link"  id="ji" href="./cake.html">CAKES</a> 
+                </li>
+    
+                <li class="nav-item">
+                    <a class="nav-link"  id="ji"  href="./special.html">SPECIAL OFFER</a> 
+                </li>
+    
+    
+                <li class="nav-item">
+                    <a class="nav-link"  id="ji"  href="./about.html">ABOUT US</a> 
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <h1 class="cakes">Pizza</h1>
+
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card mx-30">
+                <img src="/src/new_double_cheese_margherita.jpg" >
+                
+                    <div class="container mt-3">
+                        <h5>Margherita Pizza</h5>
+                        <div class="desc"><br>
+                            <p class="inner-text">
+                                he pizza base is made by mixing yeast, sugar, olive oil, salt, and all-purpose flour in a big bowl. After mixing all the ingredients, it is baked by adding the cheese as topping over it. The base is perfectly prepared by adding single layer of cheese over it. It is mouth-watering pizza for cheese lovers.    
+                            </p>
+                            <div class="box">
+                                <div class="border">4 slice<br>Rs 200</div>
+                                <div class="border">6 slice<br>Rs 400</div>
+                            </div>
+
+                        </div>
+                        <button  id="decro" type="button" class="btn btn-primary desc" data-bs-toggle="modal"
+                            data-bs-target="#myModal">Open</button>
+                            
+                            <button type="button" class="btn btn-primary Form_buy"  data-bs-toggle="modal"
+                                data-bs-target="#myForm">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-3 ">
+                <div class="card mx-28">
+                    <img src="/src/Dominos-peppy-paneer-pizza.webp">
+                    <div class="container mt-3">
+                        <h5>Paneer Pizza</h5>
+                        
+                        <div class="desc"><br>
+                            <p class="inner-text">
+                                Paneer Pizza is very different than my recipe of Paneer Tikka Pizza. Here I lightly marinate the paneer cubes with yogurt and a few spices and it is not the typical spice loaded tikka marinade that is made to make the authentic Paneer Tikka. So the taste and flavor of this Paneer Pizza is different than the tikka version.  
+                            </p>
+                            <div class="box">
+                                <div class="border">4 slice<br>Rs 500</div>
+                                <div class="border">6 slice<br>Rs 1000</div>
+                            </div>
+                        </div>
+                        <button id="decro"  type="button" class="btn btn-primary desc" data-bs-toggle="modal"
+                            data-bs-target="#myModal">Open</button>
+                            
+                            <button type="button" class="btn btn-primary Form_buy"  data-bs-toggle="modal"
+                                data-bs-target="#myForm">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="/src/New-Project1.jpg">
+                    <div class="container mt-3">
+                        <h5>Deluxe Pizza</h5>
+                        <p></p>
+                        <div class="desc"><br>
+                            <p class="inner-text">
+                                For a vegetarian looking for a BIG treat that goes easy on the spices, this one's got it all.. The onions, the capsicum, those delectable mushrooms - with paneer and golden corn to top it all.
+                            </p>    
+                            <div class="box">
+                                <div class="border">4 slice<br>Rs 350</div>
+                                <div class="border">6 slice<br>Rs 650</div>
+                            </div>
+                        </div>
+                        <button id="decro"  type="button" class="btn btn-primary desc" data-bs-toggle="modal"
+                            data-bs-target="#myModal">Open</button>
+                            
+                            <button type="button" class="btn btn-primary Form_buy"  data-bs-toggle="modal"
+                                data-bs-target="#myForm">Buy</button>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="/src/1685038567422_SKU-0734_0.jpg">
+                    <div class="container mt-3">
+                        <h5>Farmhouse Pizza</h5>
+     
+                        <div class="desc">
+                                <p class="inner-text">
+                                    A farmhouse pizza has the best vegetables you can expect to have in a mouth-watering pizza. Fresh tomatoes, crisp capsicum, and succulent mushrooms are the top toppings in a farmhouse pizza.
+                                </p>
+                                <div class="box">
+                                    <div class="border">4 slice<br>Rs 500</div>
+                                    <div class="border">6 slice<br>Rs 850</div>
+                                </div>
+                        </div>
+                        <button id="decro"  type="button" class="btn btn-primary desc" data-bs-toggle="modal"
+                            data-bs-target="#myModal">Open</button>
+                            
+                            <button type="button" class="btn btn-primary Form_buy"  data-bs-toggle="modal"
+                                data-bs-target="#myForm">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+
+ 
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+
+                <div class="card">
+                    <img src="/src/corn.f8baa08ad7f607f1de30f96bb9245b50.1.jpg">     
+                    <div class="container mt-3">
+                        <h5>Cheese n corn</h5>
+                        <div class="desc"><br>
+                            <p class="inner-text">
+                                A combination of juicy Sweet Corn & 100% mozzarella cheese with flavourful signature pan sauce.
+                            </p>
+
+                            <div class="box">
+                                <div class="border">4 slice<br>Rs 300</div>
+                                <div class="border">6 slice<br>Rs 600</div>
+                             
+                            </div>
+
+                        </div>
+                        <button  id="decro" type="button" class="btn btn-primary desc" data-bs-toggle="modal"
+                            data-bs-target="#myModal">Open</button>
+                            
+                            <button type="button" class="btn btn-primary Form_buy"  data-bs-toggle="modal"
+                                data-bs-target="#myForm">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="/src/classic-onion-capsicum-pan-personal.dad788ecbd3fcc57366462827e31ee05.1.jpg">
+                
+                    <div class="container mt-3">
+                        <h5>Onion & Capsicum Pizza</h5>
+                        <div class="desc"><br>
+                            <p class="inner-text">
+                                There are green onions &capsicum which is also known as spring onions and normal onions present on this pizza. Onion pizza base is made by mixing yeast, sugar, olive oil, salt, and all-purpose flour in a big bowl. After mixing all the ingredients, it is baked by adding thin sliced onions with coriander leaves and chili sauce over the base. Onions adds the authentic taste to the soft pizza base
+                            </p>
+
+                            <div class="box">
+                                <div class="border">4 slice<br>Rs 300</div>
+                                <div class="border">6 slice<br>Rs 600</div>
+                            </div>
+
+                        </div>
+                        <button  id="decro" type="button" class="btn btn-primary desc" data-bs-toggle="modal"
+                            data-bs-target="#myModal">Open</button>
+                            
+                            <button type="button" class="btn btn-primary Form_buy"  data-bs-toggle="modal"
+                                data-bs-target="#myForm">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="card">
+                    <img src="/src/tandoori-paneer.4ef45717e972cf45b43c010e3cde5a22.1.jpg">
+                
+                    <div class="container mt-3">
+                        <h5>Tandoori Pizza</h5>
+                        <p></p>
+                        <div class="desc"><br>
+                            <p class="inner-text">
+                                It's our signature. Spiced Paneer, Crunchy Onions & Green Capsicum, spicy Red Paprika with delicious Tandoori Sauce and 100% mozzarella cheese!
+                                
+                            </p>
+
+                            <div class="box">
+                                <div class="border">4 slice<br>Rs 400</div>
+                                <div class="border">6 slice<br>Rs 800</div>
+                            </div>
+
+                        </div>
+                        <button  id="decro" type="button" class="btn btn-primary desc" data-bs-toggle="modal"
+                            data-bs-target="#myModal">Open</button>
+                            
+                            <button type="button" class="btn btn-primary Form_buy"  data-bs-toggle="modal"
+                                data-bs-target="#myForm">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-md-3">
+
+                <div class="card">
+                    <img src="/src/unnamed.webp">
+                
+                    <div class="container mt-3">
+                        <h5>Veggi Paradise pizza</h5>
+                        <div class="desc"><br>
+                            <p class="inner-text">
+                                The veggie paradise pizza is baked carefully with fresh and crispy vegetables with the added help of stringy mozzarella cheese that adds to the taste
+                            </p>
+                            <div class="box">
+                                <div class="border">4 slice<br>Rs 350</div>
+                                <div class="border">6 slice<br>Rs 700</div>
+                            </div>
+
+                        </div>
+                        <button  id="decro" type="button" class="btn btn-primary desc" data-bs-toggle="modal"
+                            data-bs-target="#myModal">Open</button>
+                            
+                            <button type="button" class="btn btn-primary Form_buy"  data-bs-toggle="modal"
+                                data-bs-target="#myForm">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        
+
+    </div>
+
+
+
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+
+                <div class="card">
+                    <img src="/src/Tandoori-Mushroom-Pizza-Featured-Image.jpg" height="170px">
+                
+                    <div class="container mt-3">
+                        <h5>
+                            Mushroom Pizza</h5>
+                        <p></p>
+                        <div class="desc"><br>
+                            <p>
+                                Calling all mushroom lovers! This mushroom pizza recipe features four different types of fungi, plus two cheeses and fresh herbs for the perfect balance.
+                            </p>
+                            
+                            
+                    <div class="box">
+                        <div class="border">4 slice<br>Rs 500</div>
+                        <div class="border">6 slice<br>Rs 1000</div>
+                             </div>
+
+                        </div>
+                        <button  id="decro" type="button" class="btn btn-primary desc" data-bs-toggle="modal"
+                            data-bs-target="#myModal">Open</button>
+                            
+                            <button type="button" class="btn btn-primary Form_buy"  data-bs-toggle="modal"
+                                data-bs-target="#myForm">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="/src/image_1681471122802_WhatsApp_Image_2023-04-14_at_4_46_34_PM.avif" height="170px">
+
+                    <div class="container mt-3">
+                        <h5>Paneer Makhani Pizza</h5>
+
+                        <div class="desc"><br>
+                            <p class="inner-text">
+                                The paneer makhani pizza from Domino’s is the perfect veg pizza for desi pizza lovers. The delectable juicy pieces of paneer marinated in the spicy sauce, with the freshest capsicum toppings make this pizza a major hit among people all over India. The next time you’re in the mood for a funky fusion of Italian and Indian, opt for the paneer makhani pizza and order online. This combination of the two favorite flavors of Indians is enough to satisfy all your desi and Italian cravings in the best way possible.
+                            </p>
+
+                            <div class="box">
+                                <div class="border">4 slice<br>Rs 450</div>
+                                <div class="border">6 slice<br>Rs 900</div>
+
+                            </div>
+
+                        </div>
+                        <button  id="decro" type="button" class="btn btn-primary desc" data-bs-toggle="modal"
+                            data-bs-target="#myModal">Open</button>
+                            
+                            <button type="button" class="btn btn-primary Form_buy"  data-bs-toggle="modal"
+                                data-bs-target="#myForm">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="card">
+                    <img src="/src/max.jpg" height="170px">
+                
+                    <div class="container mt-3">
+                        <h5>Mexican Pizza</h5>
+                        <p></p>
+                        <div class="desc"><br>
+                            <p class="inner-text">
+                                A pizza loaded with crunchy onions, crisp capsicum, juicy tomatoes and jalapeno with a liberal sprinkling of exotic Mexican herbs.
+                            </p>
+
+                            <div class="box">
+                                <div class="border">4 slice<br>Rs 350</div>
+                                <div class="border">6 slice<br>Rs 550</div>
+                            </div>
+
+                        </div>
+                        <button  id="decro" type="button" class="btn btn-primary desc" data-bs-toggle="modal"
+                            data-bs-target="#myModal">Open</button>
+                            
+                            <button type="button" class="btn btn-primary Form_buy"  data-bs-toggle="modal"
+                                data-bs-target="#myForm">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-md-3">
+
+                <div class="card">
+                    <img src="/src/three.jpg" height="170px">
+                
+                    <div class="container mt-3">
+                        <h5>
+                            Spicy Triple Tango pizza
+
+                            </h5>
+
+                        <div class="desc"><br>
+                            <p class="inner-text">
+               
+                            </p>
+                            <div class="box">
+                                <div class="border">4 slice<br>Rs 400</div>
+                                <div class="border">6 slice<br>Rs 600</div>
+                              
+                            </div>
+
+                        </div>
+                        <button  id="decro" type="button" class="btn btn-primary desc" data-bs-toggle="modal"
+                            data-bs-target="#myModal">Open</button>
+                        
+                            <button type="button" class="btn btn-primary Form_buy"  data-bs-toggle="modal"
+                                data-bs-target="#myForm">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+            <br><br>
+
+            <div class="info">
+                <div class="log">
+                      <p>CAKESHEAVEN</p>
+                </div>
+            
+                <div class="down">
+                      <div class="know">
+                        <a href="./about.html" id="main">Abouts Us</a><br>
+                        <a href="./term&cond.html" id="main">Term & Condition</a><br>
+                        <a href="./contact.html" id="main">Contact us</a><br>
+                        <a href="./privacy.html" id="main">Privacy Policy</a>
+                      </div>
+            
+                      <div class="social">
+                          <a href="https://www.instagram.com/" id="main">Instagram</a><br>
+                          <a href="https://www.facebook.com/" id="main">Facebook</a><br>
+                          <a href="https://twitter.com/login?lang=en" id="main">Twitter</a><br>
+                          <a href="https://web.telegram.org/k/" id="main">Telegram</a>
+                      </div>
+                     </div>
+            
+            <div class="rate">
+            
+              <h3 class="us">Rate Us</h3>
+                     <div class="rating">
+                      <input value="5" name="rating" id="star5"  type="radio">
+                      <label for="star5"></label>
+                      <input value="4" name="rating" id="star4"  type="radio">
+                      <label for="star4"></label>
+                      <input value="3" name="rating" id="star3"  type="radio">
+                      <label for="star3"></label>
+                      <input value="2" name="rating" id="star2"  type="radio">
+                      <label for="star2"></label>
+                      <input value="1" name="rating" id="star1"  type="radio">
+                      <label for="star1"></label>
+                    </div>
+                   </div> 
+            
+                  
+                  
+            </div>
+
+    </div>/
+ </body>
+</html>
+
+
+
+
+
+
+
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h4 class="modal-title"></h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <img src=" alt="" class="modal-img w-50 d-block mx-auto">
+                <p class="modal-desc"></p>
+            </div>
+
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="myForm">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h4 class="modal-title1"> </h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <form class="myform" id="Form" method="post">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">Cake Name</div>
+                            <div class="col">
+                                <input type="text" name="cakename" readonly id="ck" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">Name</div>
+                            <div class="col">
+                                <input type="text" name="username" required>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">Mobile No</div>
+                            <div class="col">
+                                <input type="number" name="phone_no" required>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">Address</div>
+                            <div class="col">
+                                <input type="text" name="address" required>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col">City</div>
+                            <div class="col">
+                                <input type="text" name="city" required>
+                            </div>
+                        </div>
+
+
+
+                        <div class="row">
+                            <div class="col">Pizza Slice</div>
+                            <div class="col">
+                                <select name="Pizza" id="" required> 
+                                    <option value="" hidden>--/--</option>
+                                    <option value="1/2">4 slice</option>
+                                    <option value="1">6 slice</option>
+                                </select>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div  class="col">
+                                Extra Cheese
+                            </div>
+                            <div class="col">
+                                <button class="yes"> 
+                                    <input type="checkbox" name="cheese" required>
+                                    Yes
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <input type="submit"  value="Submit" onclick="submitForm()">
+
+
+                </form>
+
+            </div>
+
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    let form = document.getElementById("Form");
+
+    form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        let myheader = new Headers();
+        myheader.append("Content-Type", "application/json");
+        console.log(form["username"]);
+        let raw = JSON.stringify({
+            cakename: form['cakename'].value,
+            username: form["username"].value,
+            phone_no: form["phone_no"].value,
+            address: form["address"].value,
+            city: form["city"].value,
+            Pizza: form["Pizza"].value,
+            cheese: form["cheese"].value
+        });
+
+        let requestOptions = {
+            method: "POST",
+            body: raw,
+            headers: myheader,
+            redirect: "follow",
+        };
+
+        fetch("https://sheetdb.io/api/v1/8xbxfrduyyrg0", requestOptions)
+            .then(response => alert("Thanks for buying"))
+            .then((result) => console.log(result))
+            .catch((error) => console.log("error", error));
+
+        form["username"].value = ""
+        form["phone_no"].value = ""
+        form["address"].value = ""
+        form["city"].value = ""
+        form["Pizza"].value = ""
+        form["cheese"].value = "" 
+    });
+
+</script>
